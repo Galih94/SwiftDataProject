@@ -12,6 +12,22 @@ struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     @Query(filter: #Predicate<User> { user in
         return user.name.localizedStandardContains("R") && user.city == "London"
+//        if user.name.localizedStandardContains("R") {
+//            if user.city == "London" {
+//                return true
+//            } else {
+//                return false
+//            }
+//        } else {
+//            return false
+//        }
+        
+//        if user.name.localizedStandardContains("R") {
+//            if user.city == "London" {
+//                return true
+//            }
+//        }
+//        return false
     }, sort: \User.name) var users: [User]
     var body: some View {
         NavigationStack{
