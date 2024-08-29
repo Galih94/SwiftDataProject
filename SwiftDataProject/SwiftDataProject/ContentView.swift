@@ -24,13 +24,24 @@ struct ContentView: View {
                 EditUserView(user: user)
             }
             .toolbar {
-                Button("Add User", systemImage: "plus") {
-                    let date = Date.now
-                    let user = User(name: "",
-                                    city: "",
-                                    joinDate: date)
-                    modelContext.insert(user)
-                    path = [user]
+                ToolbarItem(placement: .topBarTrailing) {
+                    
+                    Button("Add User", systemImage: "plus") {
+                        let date = Date.now
+                        let user = User(name: "",
+                                        city: "",
+                                        joinDate: date)
+                        modelContext.insert(user)
+                        path = [user]
+                    }
+                }
+                ToolbarItem(placement: .topBarLeading) {
+                    
+                    Button("Delete", systemImage: "trash") {
+                        do {
+                            try modelContext.delete(model: User.self)
+                        } catch {}
+                    }
                 }
             }
         }
