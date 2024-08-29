@@ -12,6 +12,7 @@
 		2A2722502C8010CD0001BD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A27224F2C8010CD0001BD0F /* Assets.xcassets */; };
 		2A2722532C8010CD0001BD0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2722522C8010CD0001BD0F /* Preview Assets.xcassets */; };
 		2A27225B2C80120B0001BD0F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A27225A2C80120B0001BD0F /* User.swift */; };
+		2A27225E2C8014370001BD0F /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A27225D2C8014370001BD0F /* EditUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2A27224F2C8010CD0001BD0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A2722522C8010CD0001BD0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A27225A2C80120B0001BD0F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2A27225D2C8014370001BD0F /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				2A27224B2C8010CB0001BD0F /* SwiftDataProjectApp.swift */,
 				2A27224D2C8010CB0001BD0F /* ContentView.swift */,
+				2A27225C2C8014240001BD0F /* View */,
 				2A2722592C8011EC0001BD0F /* Model */,
 				2A27224F2C8010CD0001BD0F /* Assets.xcassets */,
 				2A2722512C8010CD0001BD0F /* Preview Content */,
@@ -76,6 +79,14 @@
 				2A27225A2C80120B0001BD0F /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2A27225C2C8014240001BD0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A27225D2C8014370001BD0F /* EditUserView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A27224E2C8010CB0001BD0F /* ContentView.swift in Sources */,
+				2A27225E2C8014370001BD0F /* EditUserView.swift in Sources */,
 				2A27224C2C8010CB0001BD0F /* SwiftDataProjectApp.swift in Sources */,
 				2A27225B2C80120B0001BD0F /* User.swift in Sources */,
 			);
