@@ -14,6 +14,9 @@ class User {
     var city: String = "Unknown"
     var joinDate: Date = Date.now
     @Relationship(deleteRule: .cascade) var jobs: [Job]? = [Job]() /// make sure delete object Job on User deletion, the default is .nulify that will not delete related Job
+    var unwrappedJobs: [Job] {
+        return jobs ?? []
+    }
     
     init(name: String, city: String, joinDate: Date) {
         self.name = name

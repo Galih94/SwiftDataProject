@@ -23,7 +23,7 @@ struct UsersView: View {
             HStack {
                 Text(user.name)
                 Spacer()
-                Text(String(user.jobs?.count ?? 0))
+                Text(String(user.unwrappedJobs.count))
                     .fontWeight(.black)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
